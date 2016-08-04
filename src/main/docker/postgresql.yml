@@ -1,0 +1,12 @@
+version: '2'
+services:
+    soldi-postgresql:
+        container_name: soldi-postgresql
+        image: postgres:9.5.3
+        # volumes:
+        #     - ~/volumes/jhipster/soldi/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=soldi
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
